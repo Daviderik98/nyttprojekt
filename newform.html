@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stiling.css">
+
+        <script src="forforms.js"></script>
+
+        <style>
+#firstans{
+    position:absolute;
+    top:355px;
+    left:10px;
+}
+#correct1{
+    position:absolute;
+    top: 355px;
+    left: 185px;
+}
+
+#secondans{
+position:absolute;
+top:424px;
+left: 400px;
+}
+#correct2{
+position:absolute;
+top:424px;
+left:585px;
+}
+
+#thirdans{
+    position:relative;
+    bottom:32px;
+    left: 300px;
+}
+#correct3{
+    position: absolute;
+    left: 738px;
+    bottom: 195px;
+}
+
+        </style>
+    </head>
+<body>
+<h1>This is a test, to see what you have learned about me:</h1>
+        <h5>Question 1.</h5>
+        <p>What are my 2 favorite activities, currently?</p>
+        <ul>
+            <li class="lisst" onclick="this.innerHTML='Incorrect'">Basketball</li>
+            <li class="lisst" onclick="this.innerHTML='Correct!'">Parkour</li>
+            <li class="lisst" onclick="this.innerHTML='Correct!'">Jiujitsu</li>
+            <li class="lisst" onclick="this.innerHTML='Incorrect'">Football</li>
+            <li class="lisst" onclick="this.innerHTML='Incorrect'">Rock climbing</li>
+        </ul>
+
+
+        <h5>Question 2.</h5>
+        <p>Can you fill in the blanks of this following sentences? Go ahead</p>
+
+             <form>
+                <p>The philosophy called : <br><br>    ____________________ ...</p>
+                <p id="firstans"></p>
+                <p id="correct1"></p>
+                <input type="radio" name="ans1" onclick="answerOne()">Etre et durer
+                <input type="radio" name="ans1" onclick="answerTwo()">To be and To Last
+                <input type="radio" name="ans1" onclick="answerThree()">Strength of Character
+                <input type="radio" name="ans1" onclick="answerFour()">Be Strong Be Useful
+
+                <p>... is something I have evolved myself from experience in : ____________________.</p>
+               <p id="secondans"></p>
+               <p id="correct2"></p>
+
+                <input type="radio" name="ans2" onclick="twoClickOne()">Parkour, obviously
+                <input type="radio" name="ans2" onclick="twoClickTwo()">I meditated in a cave
+                <input type="radio" name="ans2" onclick="twoClickThree()">I got it from friends
+                <input type="radio" name="ans2" onclick="twoClickFour()">Parkour, Training, and Life
+                <br><br>
+
+                <h5>Question 3.</h5>
+                <p>All the subjects on the Philosophy-page describe...?</p>
+                <input type="radio" name="ans3" onclick="thirdClickOne()">The complete philosphies of Parkour.
+                <br>
+                <input type="radio" name="ans3" onclick="thirdClickTwo()">Philosophies I learned of in school.
+                <br>
+                <input type="radio" name="ans3" onclick="thirdClickThree()">I undertook them on a university course.
+                <br>
+                <input type="radio" name="ans3" onclick="thirdClickFour()">My interpretation of parkour-<br>philosophies, mixed with my views
+   <br><br>
+                <p>Your answer : --------------------------------></p><p id="thirdans"></p>
+                <p id="correct3"></p>
+
+
+
+                <h5>Question 4.</h5>
+                <p>Which year did I truly kickstart with my filmmaking?</p>
+   <input type="radio" name="film" onclick="fourthClickOne()">1. 2018
+   <input type="radio" name="film" onclick="fourthClickTwo()">2. 2020
+   <input type="radio" name="film" onclick="fourthClickThree()">3. 2016
+   <input type="radio" name="film" onclick="fourthClickFour()">4. 2021
+
+   <ol>
+    <li id="4thans1"></li>
+    <li id="4thans2"></li>
+    <li id="4thans3"></li>
+    <li id="4thans4"></li>
+   </ol>
+   
+                <input type="button" onclick="filledIn()">Click here to submit   
+                
+             </form>
+
+            </body>
+            </html>
